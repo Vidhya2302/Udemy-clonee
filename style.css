@@ -22,6 +22,20 @@ body {
 
 .navbar__s1__title {
   color: #A435F0;
+  animation-name:zoom;
+  animation-duration:5s;
+animation-iteration-count: infinite;
+}
+@keyframes zoom {
+  0%{
+    transform: scale(0);
+    opacity:0;
+  }
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+  
 }
 
 .navbar__s2 {
@@ -79,9 +93,18 @@ body {
 
 .categories p {
   background-color: #A435F0;
+  border:solid black 1px;
   color: white;
   padding: 10px;
   border-radius: 30px;
+  cursor: pointer;
+}
+.categories p:hover{
+  background-color: transparent;
+  border:solid black 1px;
+  color: black; 
+  transition:2s;
+
 }
 
 .sales-img__one {
@@ -99,7 +122,20 @@ width:100%;
   top: 150px;
   left: 80px;
   padding: 10px;
+  animation-name:zoom;
+  animation-duration:3s;
 
+}
+@keyframes zoom {
+  0%{
+    transform:scale(0);
+    opacity:0;
+  }
+  100%{transform:scale(1);
+    opacity:1;
+
+  }
+  
 }
 
 .recommended {
